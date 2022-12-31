@@ -1,0 +1,11 @@
+@import "./variables";
+
+.users_page{
+    background-color: red;
+    width: $full;
+    height: 100vh;
+
+    h1{
+        font-size: $ft_Tlg;
+    }
+}

@@ -46,7 +46,7 @@ export const Login = () => {
     }
 
   return (
-    <main>
+    <main className="login">
         <section className="left">
             <div className="logo">
                 <img src={logo} alt="company logo" />

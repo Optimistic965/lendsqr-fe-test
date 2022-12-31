@@ -10,7 +10,7 @@ export const Notfound = () => {
             <p className="lenghty"> This page you are looking for might have been removed, 
                 had it's name changed or is temporarily unavailable.
                 <br />
-                <Link to="/" > Return to Homepage.</Link>   
+                <Link to="/dashboard" > Return to Homepage.</Link>   
             </p>
         </div>
     )
