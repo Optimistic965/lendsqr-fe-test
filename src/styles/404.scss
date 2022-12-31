@@ -1,0 +1,21 @@
+@import './variables';
+
+.ntfnd{
+    background-color: $bgc;
+    color: $primary;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    padding-top: 12em;
+}
+
+.ntfnd .heading{
+    font-family: $cta_ft;
+    font-size: 12em;
+    color: $secondary;
+    margin-bottom: .1em;
+}
+
+.ntfnd .subhead{
+    margin-bottom: 1em;
+}

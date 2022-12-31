@@ -1,0 +1,110 @@
+@import './variables';
+
+main{
+   width: $full;
+   height: 100vh;
+   display: flex;
+   
+
+   // LEFT SIDE OF THE PAGE
+   .left{
+        width: $half;
+
+    .logo{
+        width: $one_6;
+        margin-top: 96px;
+        margin-left: 97px;
+        margin-bottom: 120px;
+    }
+    .hero_img{
+        width: calc($full - 136px);
+        height: 50vh;
+        margin-left: 67px;
+        
+    }
+}
+
+ // RIGHT SIDE OF THE PAGE
+    .right{
+       font-family: $cta_ft;
+        width: $half;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 15px 90px 0px #00000008;
+
+        form{
+            width: calc($full - 269px);
+            height: 50vh;
+            position: relative;
+
+            h1{
+                font-size: $ft_Tlg;
+                font-weight: 700;
+                color: $primary;
+                margin-bottom: 5px;
+            }
+
+            h3{
+                font-size: $ft_xlg;
+                font-weight: 400;
+                color: $inactive;
+            }
+
+
+            // ERROR MESSAGE STYLE
+            .error_msg{
+                width: $full;
+                padding: .5em;
+                border-radius: 5px;
+                text-align: center;
+                text-transform: uppercase;
+                font-size: $ft;
+                color: $light;
+                background-color: $blacklist;
+                position: absolute;
+                top: 6.8em;
+            }
+
+            .input_container{
+                margin-top: 68px;
+                width: $full;
+                position: relative;
+
+                .shw_pass{
+                    position: absolute;
+                    display: block;
+                    font-size: $ft_sm;
+                    font-weight: 600;
+                    bottom: 4em;
+                    right: 3em;
+                    cursor: pointer;
+                    text-transform: uppercase;
+                    color: $secondary;
+                }
+            }
+
+            .fg_pass{
+                text-transform: uppercase;
+                font-size: $ft_sm;
+                font-weight: 600;
+                color: $secondary;
+                margin-bottom: 30px;
+            }
+
+
+            // FORM SUBMIT BUTTON
+            button{
+                width: $full;
+                height: 50px;
+                font-size: $ft;
+                font-weight: 600;
+                text-transform: uppercase;
+                background-color: $secondary;
+                color: $light;
+                border: none;
+                border-radius: 8px;
+            }
+        }
+   }
+}

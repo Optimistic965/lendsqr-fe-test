@@ -1,0 +1,49 @@
+// IMPORT FONTS
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Nanum+Gothic&family=Roboto&family=Work+Sans:wght@400;500;600&family=Xanh+Mono:ital@0;1&display=swap');
+
+
+// COLOR VARIABLES
+$primary:#213F7D;
+$secondary: #39CDCC;
+$light: #FFFFFF;
+$bgc: #E5E5E5;
+
+$user: #DF18FF;
+$active_user: #5718FF;
+$loans: #F55F44;
+$savings: #FF3366;
+
+$inactive: #545F7D;
+$pending: #E9B200;
+$blacklist: #E4033B;
+$active: #39CD62;
+
+$nav_btn_bg: rgba(33, 63, 125, 0.1);
+$nav_btn_text: rgba(33, 63, 125, 1);
+
+
+
+// TYPOGRAPHY
+$doc_ft: 'Roboto';
+$main_ft: 'Work Sans';
+$cta_ft: 'Montserrat';
+
+// FONT SIZE
+$ft_sm: 12px;
+$ft: 14px;
+$ft_lg: 16px;
+$ft_xlg: 20px;
+$ft_Tlg: 40px;
+
+
+//WIDTHS
+$full : 100%;
+$half : 50%;
+$one_4 : calc($full / 4);
+$one_6 : calc($full / 6);
+$one_8 : calc($full / 8);
+$one_10 : calc($full / 10);
+$one_12 : calc($full / 12);
+
+
+// MIXINS

@@ -1,13 +1,31 @@
-body {
+@import './variables';
+
+*, *::before, *::after{
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+img{
+  width: $full;
+  height: $full;
+}
+
+input{
+  color: $inactive;
+  width: $full;
+  font-size: $ft;
+  padding: 1.5em;
+  border: 2px solid rgba(84, 95, 125, 0.15);
+  border-radius: 5px;
+  margin-bottom: 24px;
+  position: relative;
+
+  &::placeholder{
+    font-size: $ft;
+    color: $inactive;
+  }
+  &:focus{
+    outline: none;
+  }
 }
