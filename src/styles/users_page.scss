@@ -1,11 +1,55 @@
 @import "./variables";
 
 .users_page{
-    background-color: red;
+    // background-color: red;
     width: $full;
     height: 100vh;
 
     h1{
-        font-size: $ft_Tlg;
+        font-size: $ft_xlg;
+        font-weight: 400;
+        margin-bottom: 1.6em;
+    }
+    
+    .card_cont{
+        width: $full;
+        height: 20vh;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1.6em;
+
+        .card{
+            width: 23%;
+            height: $full;
+            padding: 2em;
+            display: flex;
+            background: linear-gradient(0deg, rgba(33, 63, 125, 0.06), rgba(33, 63, 125, 0.06)),
+                        linear-gradient(0deg, #FFFFFF, #FFFFFF);
+            flex-direction: column;
+            justify-content: space-between;
+            border: 1px solid #213F7D0F;
+            box-shadow: 3px 5px 20px 0px #0000000A;
+            border-radius: 4px;
+
+            .img_cont{
+                width: $one_6;
+                display: flex;
+                padding: .4em;
+                border-radius: $half;
+                justify-content: center;
+            }
+
+            h2{
+                font-size: $ft;
+                font-weight: 400;
+                color: $inactive;
+            }
+
+            h3{
+                font-size: $ft_xlg;
+                color: $primary;
+                font-weight: 600;
+            }
+        }
     }
 }

@@ -9,4 +9,4 @@
 
 ## LOGIN DETAIL 
 - Email -- test@test.com
-- Password -- passCoode
+- Password -- passCoode1234

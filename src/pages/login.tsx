@@ -30,7 +30,7 @@ export const Login = () => {
     function handleSubmit(e: any): void {
         e.preventDefault();
 
-        if(email === "test@test.com" && password === "passCoode"){
+        if(email === "test@test.com" && password === "passCoode1234"){
             resetForm();
 
             // REDIRECT USER TO DASHBOARD

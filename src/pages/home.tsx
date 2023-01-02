@@ -170,25 +170,25 @@ export const Home = () => {
                         <img src={downArr} alt="icon" /> 
                     </div>
                 </div>
-                <SidebarEle mainIcon={briefcase} message={"Dashboard"}/>
+                <SidebarEle key={Math.random() * 10000} mainIcon={briefcase} message={"Dashboard"}/>
 
                 <section className="customer nav_cont">
                     <h2>Customer</h2>
                     { customers.map((customer) => 
-                        <SidebarEle mainIcon={customer.icon} message={customer.text}/>)}
+                        <SidebarEle key={Math.random() * 10000} mainIcon={customer.icon} message={customer.text}/>)}
                 </section>
                 <section className="business nav_cont">
                 <h2>Businesses</h2>
                     { business.map((busi) => 
-                        <SidebarEle mainIcon={busi.icon} message={busi.text}/>)}
+                        <SidebarEle key={Math.random() * 10000} mainIcon={busi.icon} message={busi.text}/>)}
                 </section>
                 <section className="settings nav_cont">
                 <h2>Settings</h2>
                     { settings.map((sett) => 
-                        <SidebarEle mainIcon={sett.icon} message={sett.text}/>)}
+                        <SidebarEle key={Math.random() * 10000} mainIcon={sett.icon} message={sett.text}/>)}
                 </section>
                 <div className="logout_cont">
-                     <SidebarEle mainIcon={lgOut} message="Logout"/>
+                     <SidebarEle key={Math.random() * 10000} mainIcon={lgOut} message="Logout"/>
                      <h4>v1.2.0</h4>
                 </div>
 

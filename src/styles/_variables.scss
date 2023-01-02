@@ -8,10 +8,10 @@ $secondary: #39CDCC;
 $light: #FFFFFF;
 $bgc: #E5E5E5;
 
-$user: #DF18FF;
-$active_user: #5718FF;
-$loans: #F55F44;
-$savings: #FF3366;
+$user: rgba(223, 24, 255, 0.1);
+$active_user: rgba(87, 24, 255, 0.1);
+$loans: rgba(245, 95, 68, 0.1);
+$savings: rgba(255, 51, 102, 0.1);
 
 $inactive: #545F7D;
 $pending: #E9B200;
@@ -32,7 +32,7 @@ $cta_ft: 'Montserrat';
 $ft_sm: 12px;
 $ft: 14px;
 $ft_lg: 16px;
-$ft_xlg: 20px;
+$ft_xlg: 24px;
 $ft_Tlg: 40px;
 
 
