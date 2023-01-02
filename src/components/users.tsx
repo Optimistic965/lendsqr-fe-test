@@ -1,3 +1,4 @@
+import React from 'react';
 import '../styles/users_page.scss';
 import { Lcard } from './lil_card';
 import users from "../assets/users_card.svg";
