@@ -37,7 +37,7 @@ export const Home = () => {
     const customers: {icon: string, text: string}[] = [
         {
             icon: user,
-            text: "Users"
+            text: "User"
         },
         {
             icon: gua_Tor,

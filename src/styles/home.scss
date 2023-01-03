@@ -2,7 +2,7 @@
 
 .home{
     background-color: $bgc;
-    height: 100vh;
+    height: 160vh;
     overflow: hidden;
     font-family: $main_ft;
 
@@ -126,7 +126,7 @@
         aside{
             background-color: $light;
             width: calc($one_4 / 1.5);
-            height: 100vh;
+            height: auto;
             box-shadow: 0px 5px 20px 0px #0000000A;
             padding-top: 40px;
             color: $nav_btn_text;

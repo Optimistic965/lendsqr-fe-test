@@ -1,8 +1,8 @@
-import {useEffect, useRef, useState} from 'react'
+import {useEffect, useState} from 'react'
 import axios from 'axios';
 
 type fetchResObj = {
-  dt: [] | null,
+  dt: [] | undefined,
   isPending: boolean,
   error: string | null
 }
@@ -11,30 +11,32 @@ type fetchResObj = {
 
 const useFetch = (url: string, method: string, params?: {}, data? : {}): fetchResObj => {
   //Setting the states and return values
-  const [dt, setDt] = useState< [] | null>(null);
+  const [dt, setDt] = useState< [] | undefined>(undefined);
   const [isPending, setIspending] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  useEffect(() => {
-
-    setIspending(true);
+  const fetchData = () => {
+    (() => setIspending(true))();
     axios(
       {
         method: method,
         url: url
       }
-     )
+    )
     .then((res) => {
-      setIspending(false)
-      setDt(res.data);
-      setError(null);
+      (() => setIspending(false))();
+      (() => setDt(res.data))();
+      (() => setError(null))();
     })
     .catch(err => {
       setError(err);
       setIspending(false);
     })
+}
 
-  }, [url, method])
+  useEffect(() => {
+  fetchData();
+  }, [method])
 
 
   return { dt, isPending, error }

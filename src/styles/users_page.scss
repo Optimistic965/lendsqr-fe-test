@@ -8,7 +8,7 @@
     h1{
         font-size: $ft_xlg;
         font-weight: 400;
-        margin-bottom: 1.6em;
+        // margin-bottom: 1.6em;
     }
     
     .card_cont{
@@ -16,7 +16,7 @@
         height: 20vh;
         display: flex;
         justify-content: space-between;
-        margin-bottom: 1.6em;
+        margin-block: 2.6em;
 
         .card{
             width: 23%;

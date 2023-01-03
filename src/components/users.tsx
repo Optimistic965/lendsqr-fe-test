@@ -48,7 +48,7 @@ export const Users = () => {
             })
           }
         </div>
-        {/* <Table /> */}
+        <Table />
     </section>
   )
 }

@@ -1,5 +1,23 @@
 @import "./variables";
 
-table{
+table, th, td{
     font-family: $main_ft;
+    background: linear-gradient(0deg, rgba(33, 63, 125, 0.06), rgba(33, 63, 125, 0.06)),
+                 linear-gradient(0deg, #FFFFFF, #FFFFFF);
+}
+
+.status{
+    display: block;
+    padding: .4em 1.4em;
+    width: $full;
+    border-radius: 100px;
+    
+    &.act{
+        background-color: $active_bg;
+        color: $active;
+    }
+    &.inact{
+        background-color: $blacklist_bg;
+        color: $blacklist;
+    }
 }
