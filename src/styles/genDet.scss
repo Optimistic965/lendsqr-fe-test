@@ -1,0 +1,50 @@
+@import "./variables";
+
+
+.gendet{
+    width: $full;
+    height: auto;
+    background: $background;
+    padding: 2em;
+    box-shadow: 3px 5px 20px 0px #0000000A;
+    border-radius: 4px;
+
+
+    .info{
+        min-height: 20vh;
+        border-bottom: 1px solid $inactive_bg;
+        margin-bottom: 2em;
+
+        h2{
+            font-weight: 500;
+            font-size: $ft_lg;
+            color: $primary;
+            margin-bottom: 1em;
+        }
+
+        .child_cont{
+            display: flex;
+            flex-wrap: wrap;
+            flex-grow: 1;
+            flex-basis: 100px;
+
+            .grndCh{
+                width: 20%;
+                height: 7vh;
+
+                .justCap{
+                    text-transform: capitalize;
+                    color: $inactive;
+                    font-size: $ft_sm;
+                    font-weight: 400;
+                }
+                
+                .bolder{
+                    color: $inactive;
+                    font-size: $ft_lg;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}

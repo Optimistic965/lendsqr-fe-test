@@ -1,0 +1,212 @@
+@import "./variables";
+
+
+.detail{
+    .cont{
+        display: flex;
+        width: $one_6;
+        // background-color: green;
+        height: 2em;
+        justify-content: center;
+        align-items: center;
+
+        img{
+            width: 40%;
+        }
+
+        a{
+            display: inline-block;
+            width: 70%;
+            color: $inactive;
+            text-decoration: none;
+        }
+    }
+
+    .user_heading{
+
+        margin-block: 2em;
+        // background-color: green;
+        display: flex;
+        height: 3em;
+        justify-content: space-between;
+
+        h1{
+            height: $full;
+            // background-color: yellow;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            font-weight: 500;
+            color: $primary;
+            font-size: $ft_xlg;
+        }
+
+        .btn_cont{
+            display: flex;
+            justify-content: space-between;
+            height: $full;  
+            width: 30%;
+            // background-color : red;
+
+            .btn{
+                padding-inline: 1em;
+                text-align: center;
+                font-weight: 600;
+                font-size: 14px;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+                border-radius: 8px;
+                cursor: pointer;
+            }
+
+            .blckLst{
+                color: $blacklist;
+                border: 2px solid $blacklist;
+
+                &:hover{
+                    background-color: $blacklist;
+                    color: $light;
+                }
+            }
+
+            .actUr{
+                color: $secondary;
+                border: 2px solid $secondary;
+
+                &:hover{
+                    background-color: $secondary;
+                    color: $light;
+                }
+            }
+        }
+    }
+
+    .main_heading{
+        height: 13em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background: $background;
+        border: 1px solid $savings;
+        box-shadow: 3px 5px 20px 0px #0000000A;
+        margin-bottom: 2em;
+
+
+        .top{
+            height: 50%;
+            display: flex;
+            margin-top: 2em;
+            
+            .profile{
+                width: $one_4;
+                display: flex;
+                height: 100%;
+                justify-content: center;
+                align-items: center;
+
+                .img-cont{
+                    width: 30%;
+                    background-color: $inactive_bg;
+                    border-radius: 50%;
+                    display: flex;
+                    padding: 1.7em;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .names{
+                    padding: 1em;
+
+                    h2{
+                        font-size: 22px;
+                        font-weight: 400;
+                        color: $primary;
+                    }
+
+                    h3{
+                        font-size: $ft;
+                        font-weight: 400;
+                        color: $inactive;
+                    }
+                }
+            }
+            
+            .user_teir{
+                width: $one_8;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border-inline: 1px solid $inactive_bg;
+
+                .title{
+                    font-size: $ft;
+                    font-weight: 400;
+                    color: $primary;
+                    margin-bottom: .5em;
+                }
+                
+                .star_cont{
+                    display: flex;
+                    width: 45%;
+                    align-items: flex-start;
+                }
+            }
+            
+            .acct_details{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                padding: 1em;
+                width: $one_6;
+                color: $primary;
+
+                .bank_name{
+                    font-size: $ft_sm;
+                    font-weight: 400;
+                }
+
+                .Acct_bln{
+                    font-size: 22px;
+                    font-weight: 400;
+                }
+                
+            }
+        }
+
+        .bottom{
+            height: 20%;
+            // background-color: gold;
+            width: $full;
+            display: flex;
+            padding-inline: 1em;
+
+
+            a{
+                width: $one_6;
+                padding-inline: 1em;
+                padding-block: .5em;
+                display: block;
+                text-align: center;
+                text-decoration: none;
+                color: #000000CC;
+
+                &:hover{
+                    background-color: $active_bg;
+                }
+            }
+
+            .active{
+                border-bottom: 3px solid $secondary;
+                background-color: inherit;
+                color: $secondary;
+                border-left: none;
+
+                &:hover{
+                    background-color: inherit;
+                }
+            }
+        }
+    }
+}

@@ -2,8 +2,7 @@
 
 table, th, td{
     font-family: $main_ft;
-    background: linear-gradient(0deg, rgba(33, 63, 125, 0.06), rgba(33, 63, 125, 0.06)),
-                 linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    background: $background;
 }
 
 .status{

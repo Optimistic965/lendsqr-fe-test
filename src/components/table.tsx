@@ -5,8 +5,7 @@ import "../styles/table.scss";
 import { Table as TB } from "antd";
 import { useNavigate } from "react-router-dom";
 
-
-const {Column, ColumnGroup} = TB;
+const {Column} = TB;
 
 
 type dtaCont = {
@@ -20,16 +19,16 @@ type dtaCont = {
 }
 
 export const Table = () => {
-  const [url, setUrl] = useState("https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users");
-  const {dt:data, isPending, error} = useFetch(url, "get");
-
+  const [url, setUrl] = useState<string>("https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users");
+  const [method, setMethod] = useState<string>("get");
+  const {dt:data, isPending, error} = useFetch(url, method);
   
-  const newdata = data?.map(({...item}: {id: string}) => item.id);
+  
+  const navigate = useNavigate();
+  const GetDataNav = (id: string): void => {
 
-    console.log(newdata)
-    
-    const navigate = useNavigate();
-
+    navigate(`/user/${id}`)
+  }
 
 
   return (
@@ -62,10 +61,10 @@ export const Table = () => {
           key="id"
           render= {(id, record: dtaCont) => (
             <img 
+                alt="any"
                 style={{cursor: "pointer"}}
                 src={dots}
-                onClick={() => 
-                  navigate(`/user/${id}`)}
+                onClick={() => GetDataNav(id)}
             />
         )}
         />

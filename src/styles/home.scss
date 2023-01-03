@@ -2,10 +2,9 @@
 
 .home{
     background-color: $bgc;
-    height: 160vh;
+    height: 180vh;
     overflow: hidden;
     font-family: $main_ft;
-
 
     // TOPBAR STYLES
     header{
@@ -172,6 +171,22 @@
             width: calc($full - ($one_4 / 1.5));
             padding: 4em;
             // color: #E5E5E5
+        }
+    }
+
+    .dataFailure{
+        width: $full;
+        background: $background;
+        text-align: center;
+        padding-top: 8em;
+        height: 40vh;
+
+        h1{
+            font-size: $ft_xlg;
+        }
+
+        p{
+            font-size: $ft_sm;
         }
     }
 

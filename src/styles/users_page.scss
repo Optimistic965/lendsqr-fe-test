@@ -23,8 +23,7 @@
             height: $full;
             padding: 2em;
             display: flex;
-            background: linear-gradient(0deg, rgba(33, 63, 125, 0.06), rgba(33, 63, 125, 0.06)),
-                        linear-gradient(0deg, #FFFFFF, #FFFFFF);
+            background: $background;
             flex-direction: column;
             justify-content: space-between;
             border: 1px solid #213F7D0F;

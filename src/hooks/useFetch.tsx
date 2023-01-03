@@ -15,27 +15,41 @@ const useFetch = (url: string, method: string, params?: {}, data? : {}): fetchRe
   const [isPending, setIspending] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  const fetchData = () => {
-    (() => setIspending(true))();
-    axios(
-      {
-        method: method,
-        url: url
-      }
-    )
-    .then((res) => {
-      (() => setIspending(false))();
-      (() => setDt(res.data))();
-      (() => setError(null))();
-    })
-    .catch(err => {
-      setError(err);
-      setIspending(false);
-    })
-}
-
+  
   useEffect(() => {
+    let source = axios.CancelToken.source();
+
+    const fetchData = () => {
+
+      try {
+        setIspending(true);
+        axios(
+          {
+            method: method,
+            url: url,
+            cancelToken: source.token
+          }
+        )
+        .then((res) => {
+          setIspending(false);
+          setDt(res.data);
+          setError(null);
+        })
+      } catch (error) {
+        if(axios.isCancel(error)){
+          console.log("Caught cancel");
+        } else {
+          throw error;
+        }
+        setIspending(false); 
+      }
+  }
+
   fetchData();
+
+  return( () => {
+    source.cancel();
+  })
   }, [method])
 
 
