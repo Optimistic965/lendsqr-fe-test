@@ -50,7 +50,7 @@ const useFetch = (url: string, method: string, params?: {}, data? : {}): fetchRe
   return( () => {
     source.cancel();
   })
-  }, [method])
+  }, [url, method])
 
 
   return { dt, isPending, error }
